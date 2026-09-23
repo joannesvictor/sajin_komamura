@@ -1,0 +1,26 @@
+# Backups automáticos do Fighter Factory Studio
+*.bak
+*.sff.bak
+*.air.bak
+*.cns.bak
+*.cmd.bak
+
+# Arquivos temporários de sistema
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Logs de teste do MUGEN/Ikemen GO
+*.log
+mugen-debug.log
+
+# Save states / configs locais de teste (se você copia o char pra dentro de um MUGEN local pra testar)
+*.cfg.local
+
+# Arquivos temporários de edição de imagem, se usar algum editor externo
+*.psd~
+*.tmp
+
+# Pastas de save/replay do Ikemen GO, se estiver testando dentro do repo
+save/
+komamura sprites/
