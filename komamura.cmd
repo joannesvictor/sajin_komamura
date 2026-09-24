@@ -247,5 +247,8 @@ command = s
 ; Don't remove the following line. It's required by the CMD standard.
 [Statedef -1]
 
-; Nenhuma entrada de estado ainda -- volte aqui quando os golpes
-; (states do .cns) e o alinhamento dos sprites estiverem prontos.
+[State -1, Placeholder]
+type = VarSet
+trigger1 = 0
+v = 0
+value = 0
