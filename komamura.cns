@@ -83,6 +83,14 @@ down.friction.threshold    = .2	;If the player's speed drops below this threshol
 ; Up to 100 victory quotes can be specified per language (victory0 - victory99)
 victory1 = "Some victory text."
 
+[Statedef -1]
+
+[State -1, Placeholder]
+type = VarSet
+trigger1 = 0
+v = 0
+value = 0
+
 [Statedef 0]
 type    = S
 movetype= I
