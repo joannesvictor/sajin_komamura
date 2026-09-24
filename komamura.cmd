@@ -1,4 +1,3 @@
-
 ; The CMD file.
 ;
 ; Two parts: 1. Command definition and  2. State entry
@@ -146,6 +145,66 @@ command.time = 15
 command.buffer.time = 1
 
 ;---------------------------------------------------------------------------
+; Comandos básicos (movimento + botões isolados)
+; ------------------------------------------------
+; Esse é o mínimo necessário para o MUGEN aceitar carregar o .cmd
+; (ele exige pelo menos 1 [Command] definido). Ainda NÃO há nenhuma
+; entrada de estado (Statedef -1) associada a eles, porque os states
+; dos golpes e o alinhamento das animações ainda não estão prontos.
+; Quando os states existirem, cada um desses comandos vira um trigger
+; ali embaixo, ex:
+;   [State -1, LightPunch]
+;   type = ChangeState
+;   value = 200
+;   triggerall = statetype != A
+;   trigger1 = command = "a"
+;   trigger1 = ctrl
+
+[Command]
+name = "holdfwd"
+command = /F
+
+[Command]
+name = "holdback"
+command = /B
+
+[Command]
+name = "holdup"
+command = /U
+
+[Command]
+name = "holddown"
+command = /D
+
+[Command]
+name = "a"
+command = a
+
+[Command]
+name = "b"
+command = b
+
+[Command]
+name = "c"
+command = c
+
+[Command]
+name = "x"
+command = x
+
+[Command]
+name = "y"
+command = y
+
+[Command]
+name = "z"
+command = z
+
+[Command]
+name = "start"
+command = s
+
+;---------------------------------------------------------------------------
 ; 2. State entry
 ; --------------
 ; This is where you define what commands bring you to what states.
@@ -188,3 +247,5 @@ command.buffer.time = 1
 ; Don't remove the following line. It's required by the CMD standard.
 [Statedef -1]
 
+; Nenhuma entrada de estado ainda -- volte aqui quando os golpes
+; (states do .cns) e o alinhamento dos sprites estiverem prontos.

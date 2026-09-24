@@ -82,3 +82,24 @@ down.friction.threshold    = .2	;If the player's speed drops below this threshol
 [Quotes]
 ; Up to 100 victory quotes can be specified per language (victory0 - victory99)
 victory1 = "Some victory text."
+
+[Statedef 0]
+type    = S
+movetype= I
+physics = S
+ctrl    = 1
+anim    = 0
+velset  = 0,0
+juggle  = 0
+poweradd = 0
+facep2  = 0
+
+[State 0, VelSetX]
+type = VelSet
+trigger1 = 1
+x = 0
+
+[State 0, ChangeAnim]
+type = ChangeAnim
+trigger1 = Anim != 0
+value = 0
